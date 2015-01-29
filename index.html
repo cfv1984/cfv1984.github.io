@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
+<title>Tadaaaaa</title>
+<style>
+	* {
+		box-sizing: border-box
+	}
+
+	html,
+	body {
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	a {
+		text-decoration: none;
+		color: #333;
+		transition: 1s color;
+	}
+
+	a:hover,
+	a:active {
+		color: green;
+	}
+
+	.wrap-menu {
+		width: 100%;
+		display: block;
+		transform: translateY(50%);
+    position: absolute;
+    top: 50vh;
+	}
+
+	.wrap-menu ul a {
+		font-family: 'Reenie Beanie', cursive;
+		font-size: 7vh;
+		display: block;
+		width: 100%;
+	}
+
+	.wrap-menu ul,
+	.wrap-menu li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: inline;
+	}
+
+
+	.wrap-head {
+		width: 100%;
+	}
+
+	.wrap-head img {
+		width: 100%;
+	}
+
+	@media only screen and (min-width:700px) {
+
+		.wrap-head,
+		.wrap-menu {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 50vw;
+			height: 100vh;
+		}
+
+		.wrap-menu {
+			left: 50%;
+			transform:none;
+			top:0;
+		}
+
+		.wrap-head img {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			height: auto;
+			transform: translateY(-50%);
+		}
+
+		.wrap-menu ul {
+			display: block;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		.wrap-menu ul a {
+			font-size: 6vw;
+		}
+	}
+</style>
+
+<body>
+	<div class="wrap-head">
+		<img class="main" src="assets/avatar.jpg" alt="Carlos Vergara, web developer">
+	</div>
+	<div class="wrap-menu">
+		<ul>
+			<li><a href="https://cfv1984.github.io/modern-webpack-starter-project">Webpack starter</a></li>
+			<li><a href="https://cfv1984.github.io/node-starter/">NodeJS starter</a></li>
+			<li><a href="https://github.com/cfv1984/repositories">Assorted trinkets</a></li>
+		</ul>
+	</div>
+</body>
+
+</html>
