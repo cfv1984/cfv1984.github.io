@@ -1,114 +1,130 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8">
-<link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
-<title>Tadaaaaa</title>
-<style>
-	* {
-		box-sizing: border-box
-	}
 
-	html,
-	body {
-		width: 100%;
-		height: auto;
-		margin: 0 auto;
-	}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
 
-	a {
-		text-decoration: none;
-		color: #333;
-		transition: 1s color;
-	}
-
-	a:hover,
-	a:active {
-		color: green;
-	}
-
-	.wrap-menu {
-		width: 100%;
-		display: block;
-		transform: translateY(50%);
-    position: absolute;
-    top: 50vh;
-	}
-
-	.wrap-menu ul a {
-		font-family: 'Reenie Beanie', cursive;
-		font-size: 7vh;
-		display: block;
-		width: 100%;
-	}
-
-	.wrap-menu ul,
-	.wrap-menu li {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		display: inline;
-	}
-
-
-	.wrap-head {
-		width: 100%;
-	}
-
-	.wrap-head img {
-		width: 100%;
-	}
-
-	@media only screen and (min-width:700px) {
-
-		.wrap-head,
-		.wrap-menu {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 50vw;
-			height: 100vh;
+	<title>Carlos Vergara</title>
+	<style>
+		* {
+			box-sizing: border-box
 		}
 
-		.wrap-menu {
-			left: 50%;
-			transform:none;
-			top:0;
-		}
-
-		.wrap-head img {
-			position: absolute;
-			top: 50%;
-			left: 0;
+		body,
+		html,
+		main {
 			width: 100%;
-			height: auto;
-			transform: translateY(-50%);
+			min-width: 24em;
+			height: 100%;
+			margin: 0;
+			padding: 0
 		}
 
-		.wrap-menu ul {
+		main {
+			display: table
+		}
+
+		header {
+			background: url(assets/avatar.jpg) no-repeat center center;
+			background-size: contain
+		}
+
+		h1 {
+			font-size: 0;
+			text-indent: -999px;
+			color: transparent
+		}
+
+		a {
+			font: 800 3vw 'Reenie Beanie';
 			display: block;
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
+			padding: 1ex 0;
+			transition: color 2s;
+			transition-timing-function: ease-in;
+			text-align: center;
+			text-decoration: none;
+			color: #080808
 		}
 
-		.wrap-menu ul a {
-			font-size: 6vw;
+		a:link:hover {
+			color: #63e000
 		}
-	}
-</style>
+
+		a:visited {
+			color: gray
+		}
+
+		a:visited:hover {
+			color: #92baa0
+		}
+
+		li,
+		ul {
+			display: inline;
+			margin: 0;
+			padding: 0
+		}
+
+		@media screen and (min-width:1em) {
+			main {
+				border-spacing: 0 1em;
+				border-collapse: separate
+			}
+
+			header,
+			nav {
+				display: table-row;
+				height: 50%;
+				vertical-align: middle
+			}
+
+			a {
+				font-size: 4vh
+			}
+		}
+
+		@media screen and (min-width:40em) {
+
+			header,
+			nav {
+				display: table-cell;
+				width: 50%
+			}
+
+			a {
+				font-size: 4vw
+			}
+		}
+
+		@media screen and (min-width:70em) {
+			a {
+				font-size: 6vw
+			}
+		}
+
+		@media screen and (min-width:960px) {
+			a {
+				font-size: 5vw
+			}
+		}
+	</style>
+</head>
 
 <body>
-	<div class="wrap-head">
-		<img class="main" src="assets/avatar.jpg" alt="Carlos Vergara, web developer">
-	</div>
-	<div class="wrap-menu">
-		<ul>
-			<li><a href="https://cfv1984.github.io/modern-webpack-starter-project">Webpack starter</a></li>
-			<li><a href="https://cfv1984.github.io/node-starter/">NodeJS starter</a></li>
-			<li><a href="https://github.com/cfv1984/repositories">Assorted trinkets</a></li>
-		</ul>
-	</div>
+	<main>
+		<header>
+			<h1>Things I made</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#01">Frontend starter project</a></li>
+				<li><a href="#02">Backend starter project</a></li>
+				<li><a href="#03">Assorted trinkets I built</a></li>
+			</ul>
+		</nav>
+	</main>
 </body>
 
 </html>
